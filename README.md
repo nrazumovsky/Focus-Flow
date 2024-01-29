@@ -1,27 +1,39 @@
-# React + TypeScript + Vite
+# Focus Flow
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Приложения для работы с временем, которая помогает увеличить концентрацию и эффективность работы:
 
-Currently, two official plugins are available:
+- Создайте и выберите задачу, которую вы хотите выполнить.
+- Установите таймер на определенное время, обычно 25 минут. Это называется _фокусом_.
+- Когда таймер заканчивает отсчет, переходите на следующий этап - _короткий перерыв_. Пауза обычно длится 5 минут
+- После завершения паузы вернитесь к работе и повторяйте процесс, начиная новый рабочий интервал.
+- По окончанию всех интервалов сделайте _длинный перерыв_. Обычно это 25 минут
+- Повторяйте цикл, пока вы не завершите задачу или до тех пор, пока вы не решите перейти к следующей задаче.
+- Вы можете изменять время фокусировки, короткого и длинного перерывов
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Сборка проекта
 
-## Expanding the ESLint configuration
+Проект написан на React, TypeScript, Redux
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Перед началом работы необходимо установить зависимости через `npm`:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+```
+npm i
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Сборка проекта в режиме разработки с запуском локального сервера:
+
+```
+npm run dev
+```
+
+### Сборка проекта в режиме Production:
+
+```
+npm run build
+```
+
+### Запуск проверки кода с помощью ESLint
+
+```
+npm run lint
+```
