@@ -1,0 +1,40 @@
+.chartBarChartDaysOfWeek {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 70px;
+  gap: 32px;
+}
+
+.chartBarKnobWithOutData {
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: 11px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  width: 50%;
+  background-color: #c4c4c4;
+}
+
+.chartBarKnobWithDataCurrentDate {
+  background-color: var(--ui-red);
+}
+
+.chartBarKnobWithDataNonCurrentDate {
+  background-color: var(--ui-pale-red);
+}
+
+.chartBarButtonSekectedDate {
+  color: var(--ui-red);
+}
+
+.chartButton {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border: none;
+  padding: 12px 24px;
+  background-color: transparent;
+  cursor: pointer;
+}

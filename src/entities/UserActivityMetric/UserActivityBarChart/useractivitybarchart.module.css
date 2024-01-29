@@ -1,0 +1,9 @@
+.chartBarContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border: 1px solid var(--ui-stroke-gray);
+  border-radius: 12px;
+  padding: 51px 24px;
+  background-color: var(--ui-bg-gray);
+}

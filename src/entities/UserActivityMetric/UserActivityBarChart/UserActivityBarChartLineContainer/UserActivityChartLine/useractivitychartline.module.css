@@ -1,0 +1,9 @@
+.chartLineContainer {
+  display: flex;
+  align-items: center;
+}
+
+.chartLine {
+  width: 100%;
+  stroke: var(--ui-stroke-gray);
+}

@@ -1,0 +1,21 @@
+.icon {
+  display: flex;
+  align-items: center;
+}
+
+.size-24 {
+  width: 24px;
+  height: 24px;
+}
+
+.white {
+  stroke: var(--ui-white);
+}
+
+.black {
+  stroke: var(--ui-black);
+}
+
+.red {
+  fill: var(--ui-red);
+}

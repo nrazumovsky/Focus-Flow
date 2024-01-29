@@ -1,0 +1,10 @@
+.timerCounter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto Mono", monospace;
+  font-size: 300px;
+  line-height: 363px;
+  font-weight: 700;
+  color: var(--ui-black);
+}

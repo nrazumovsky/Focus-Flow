@@ -1,0 +1,12 @@
+.statisticsMetricWidgetsContainer {
+  display: grid;
+  gap: 24px;
+}
+
+.chartBarContainer {
+  border: 1px solid var(--ui-stroke-gray);
+  border-radius: 12px;
+  padding: 24px 24px 17px 24px;
+  min-width: 552px;
+  background-color: var(--ui-bg-gray);
+}

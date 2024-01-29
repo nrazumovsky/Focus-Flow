@@ -1,0 +1,27 @@
+.container {
+  margin: 0 auto;
+  padding: 0 40px;
+  max-width: 1360px;
+}
+
+.statisticsContainer {
+  display: grid;
+  grid-template-columns: 224px 3fr;
+  gap: 24px;
+}
+
+.statisticsMetricWidgetsContainer {
+  display: grid;
+  gap: 24px;
+}
+
+.title {
+  flex-grow: 1;
+  font-weight: 700;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}

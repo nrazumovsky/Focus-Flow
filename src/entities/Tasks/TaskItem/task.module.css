@@ -1,0 +1,102 @@
+.task {
+  position: relative;
+  display: flex;
+  border-radius: 12px;
+  background-color: transparent;
+  transition:
+    background-color 0.25s ease-in-out,
+    border 0.25s ease-in-out;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.taskActions {
+  position: absolute;
+  right: 0;
+  display: flex;
+  border-radius: 12px;
+  max-height: 52px;
+}
+
+.task:hover {
+  background-color: var(--ui-bg-gray-hover);
+}
+
+.task:hover > .taskActions > .taskControlsIcon {
+  background-color: var(--ui-bg-gray-hover);
+  opacity: 100%;
+  visibility: visible;
+}
+
+.taskActive {
+  background-color: var(--ui-bg-gray-hover);
+}
+
+.taskSelectButton {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  border: none;
+  border-radius: 12px;
+  padding: 16px;
+  min-height: 52px;
+  max-width: 100%;
+  background-color: transparent;
+  transition:
+    background-color 0.25s ease-in-out,
+    border 0.25s ease-in-out;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.taskSelectButtonText {
+  overflow-wrap: break-word;
+  width: 100%;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+}
+
+.taskControlsIcon {
+  border: none;
+  border-radius: 12px;
+  padding: 16px 3px;
+  font-size: 12px;
+  line-height: 14px;
+  stroke: var(--ui-black);
+  background-color: transparent;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.25s ease-in-out,
+    visibility 0.25s ease-in-out,
+    background-color 0.25s ease-in-out,
+    border-radius 0.25s ease-in-out;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.taskControlsIcon:first-child {
+  padding-left: 16px;
+}
+
+.taskControlsIcon:last-child {
+  padding-right: 16px;
+}
+
+.taskEditIconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.taskEditIconContainer:hover > .taskEditIcon {
+  stroke: var(--ui-stroke-gray);
+}
+
+.taskEditIcon {
+  fill: none;
+  stroke: var(--ui-black);
+  stroke-width: 1.5px;
+  transition: stroke 0.25s ease-in-out;
+}

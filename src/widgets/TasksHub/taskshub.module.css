@@ -1,0 +1,66 @@
+.tasksHubContainer {
+  position: fixed;
+  left: 50%;
+  bottom: 40px;
+  border: 1px solid var(--ui-stroke-gray);
+  border-radius: 12px;
+  padding: 6px;
+  min-width: 336px;
+  background-color: var(--ui-bg-gray);
+  transform: translateX(-50%);
+  transition: max-width 0.5s;
+}
+
+.tasksList {
+  margin: 0;
+  padding: 0;
+}
+
+.formMenuContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.formMenu {
+  margin-right: 6px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 16px;
+  min-width: 287px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--ui-white);
+  background-color: var(--ui-black);
+}
+
+.formMenuContainer {
+  display: flex;
+  align-items: center;
+}
+
+.formButton {
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 16px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--ui-white);
+  background-color: var(--ui-red);
+  transition:
+    border 0.25s ease-in-out,
+    color 0.25s ease-in-out,
+    background-color 0.25s ease-in-out;
+  cursor: pointer;
+}
+
+.formButton:disabled {
+  border-color: var(--ui-stroke-gray);
+  color: var(--ui-stroke-gray);
+  background-color: transparent;
+  transition:
+    border 0.25s ease-in-out,
+    color 0.25s ease-in-out,
+    background-color 0.25s ease-in-out;
+}

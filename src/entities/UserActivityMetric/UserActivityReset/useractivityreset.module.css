@@ -1,0 +1,8 @@
+.activityHeadingContainer {
+  display: flex;
+  margin-bottom: 3px;
+}
+
+.activityHeading {
+  flex-grow: 1;
+}

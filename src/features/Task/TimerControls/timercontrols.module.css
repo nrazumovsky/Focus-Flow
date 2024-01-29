@@ -1,0 +1,45 @@
+.timerControlsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 6px;
+  margin-left: 6px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 16px;
+  font-size: 14px;
+  line-height: 16px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background-color: transparent;
+  transition:
+    border 0.25s ease-in-out,
+    background-color 0.25s ease-in-out;
+  cursor: pointer;
+}
+
+.button.buttonPrimary {
+  display: flex;
+  justify-content: center;
+  background-color: var(--ui-red);
+}
+
+.button.buttonPrimary:hover {
+  background-color: var(--ui-red-hover);
+}
+
+.button.buttonPrimary:active {
+  background-color: var(--ui-red-active);
+}
+
+.button.buttonSecondary:hover {
+  border-color: var(--ui-stroke-gray);
+}
+
+.timerControlsIcon {
+  fill: none;
+  stroke-width: 1.5px;
+}

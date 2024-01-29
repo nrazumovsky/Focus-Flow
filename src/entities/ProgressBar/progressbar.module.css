@@ -1,0 +1,14 @@
+.timerProgressBar {
+  border-radius: 6px;
+  width: 640px;
+  height: 6px;
+  background-color: var(--ui-stroke-gray);
+}
+
+.timerProgressBarFill {
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--ui-red);
+  transition: width var(--ui-tansition);
+}

@@ -1,0 +1,13 @@
+.timerStatusBadge {
+  overflow: hidden;
+  margin-bottom: 16px;
+  border-radius: 27px;
+  padding: 12px 24px;
+  background-color: var(--ui-bg-gray);
+  transition: width 0.3s ease-in-out;
+}
+
+.timerStatusBadgeText {
+  width: 100%;
+  font-weight: 700;
+}

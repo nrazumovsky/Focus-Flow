@@ -1,0 +1,56 @@
+.formButton {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 52px;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: var(--ui-bg-gray);
+  border: 1px solid transparent;
+  color: var(--ui-black);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: left;
+  cursor: pointer;
+  transition:
+    border 0.25s ease-in-out,
+    color 0.25s ease-in-out,
+    background-color 0.25s ease-in-out;
+}
+
+.formButton:hover {
+  background-color: var(--ui-bg-gray-hover);
+}
+
+.plusIcon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  margin-right: 16px;
+}
+
+.plusIcon:before,
+.plusIcon:after {
+  content: "";
+  position: absolute;
+  background-color: var(--ui-black);
+  border-radius: 2px;
+}
+
+.plusIcon:before {
+  width: 100%;
+  height: 2px;
+}
+
+.plusIcon:after {
+  width: 2px;
+  height: 100%;
+}
+
+.formText {
+  min-width: 52px;
+}

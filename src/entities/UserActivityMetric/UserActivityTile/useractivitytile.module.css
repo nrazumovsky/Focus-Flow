@@ -1,0 +1,10 @@
+.container {
+  border: 1px solid var(--ui-stroke-gray);
+  border-radius: 12px;
+  padding: 16px 24px;
+  max-width: 224px;
+  max-height: 96px;
+  font-weight: 600;
+  font-size: 0;
+  background-color: var(--ui-bg-gray);
+}

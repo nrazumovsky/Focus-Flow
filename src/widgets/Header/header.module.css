@@ -1,0 +1,16 @@
+.header {
+  z-index: 10;
+  margin-bottom: 76px;
+}
+
+.headerWrapper {
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  padding: 26px 0;
+  font-size: 0;
+}

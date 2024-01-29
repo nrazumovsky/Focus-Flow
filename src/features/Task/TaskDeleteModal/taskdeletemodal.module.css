@@ -1,0 +1,106 @@
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  box-shadow: var(--ui-menu-shadow);
+  background-color: var(--ui-modal-bg);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.25s ease-in-out,
+    visibility 0.25s ease-in-out;
+}
+
+.modal.modalActive {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modalContainer {
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  border-radius: 6px;
+  min-width: 400px;
+  min-height: 170px;
+  box-shadow: var(--ui-modal-shadow);
+  background-color: var(--ui-white);
+}
+
+.modalHeader {
+  display: flex;
+  align-items: center;
+}
+
+.modalLabel {
+  flex-grow: 1;
+  padding: 20px 16px 20px;
+  text-transform: uppercase;
+}
+
+.modalText {
+  padding: 16px 16px 24px 16px;
+}
+
+.modalCloseButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 16px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.modalCloseIcon {
+  padding: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.modalCloseButton::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 1px;
+  background-color: var(--ui-black);
+  transform: rotate(45deg);
+  transition: background-color 0.25s ease-in-out;
+}
+
+.modalCloseButton::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 1px;
+  background-color: var(--ui-black);
+  transform: rotate(-45deg);
+  transition: background-color 0.25s ease-in-out;
+}
+
+.button {
+  border: 1px solid transparent;
+  padding: 13px 16px;
+  font-size: 14px;
+  line-height: 16px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.confirmButton {
+  border-radius: 6px;
+  color: var(--ui-white);
+  background-color: var(--ui-red);
+}
+
+.modalControls {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 16px 16px;
+}

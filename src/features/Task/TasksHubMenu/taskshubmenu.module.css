@@ -1,0 +1,73 @@
+.formMenu {
+  display: flex;
+
+  flex-grow: 1;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 16px;
+  height: 52px;
+  background-color: var(--ui-black);
+}
+
+.formMenuTextContent {
+  flex-grow: 1;
+  overflow: hidden;
+  max-width: 288px;
+  font-weight: 600;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: var(--ui-white);
+}
+
+.formCloseButton {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 6px;
+  border: none;
+  padding: 0;
+  min-width: 24px;
+  min-height: 52px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.formCloseButtonLine {
+  content: "";
+  position: absolute;
+  display: flex;
+  width: 12px;
+  height: 1px;
+  background-color: var(--ui-white);
+  transform: rotate(0);
+  transition:
+    scale 0.25s ease-in-out,
+    transform 0.25s ease-in-out;
+  scale: 100%;
+}
+
+.formCloseButtonLine:nth-of-type(1) {
+  top: 22px;
+}
+
+.formCloseButtonLine:nth-of-type(3) {
+  top: 30px;
+}
+
+.formCloseButton.formCloseButtonActive .formCloseButtonLine:nth-of-type(1) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform: rotate(45deg);
+}
+
+.formCloseButton.formCloseButtonActive .formCloseButtonLine:nth-of-type(2) {
+  scale: 0;
+}
+
+.formCloseButton.formCloseButtonActive .formCloseButtonLine:nth-of-type(3) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform: rotate(-45deg);
+}

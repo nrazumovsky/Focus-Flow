@@ -1,0 +1,11 @@
+.userActivityChartLineContainer {
+  display: grid;
+  margin-bottom: 4px;
+  gap: 66px;
+}
+
+.userActivityChartLineItem {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
